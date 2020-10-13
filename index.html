@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Responsive-layout-2">
-    <meta name="kewwords" content="Responsive-page-2">
+    <meta name="keywords" content="Responsive-page-2">
     <meta name="author" content="Maria Pahome">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Layout 2</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="bundles/font-awesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="resources/main.css">
 </head>
 <body>
    <div class="page-container">
        <header>
-           <div class="upper-corner">
+           <div class="go-arch-container">
                <div>go.arch</div>
                <div class="verticle-line"></div>
                <i class="fab fa-instagram-square"></i>
                <i class="fab fa-facebook-f"></i>
            </div>
-           <div class="upper-right-corner">
+           <div class="menu-container">
                <nav class='menu-section'>
                    <ul>
                        <li><a href="#">Home</a></li>
@@ -48,31 +48,26 @@
                 <div>Modern Hotel</div>
                 <div>In Gorizia</div>
                 <div>Interior</div>
-                
             </div>
             <div class="architecture-b">
                 <div>Modern Hotel</div>
                 <div>In London</div>
                 <div>Architecture</div>
-                
             </div>
-            <div class="interior-b">
+             <div class="interior-b">
                 <div>Modern Bedroom</div>
                 <div>In Paris</div>
-                <div>Interior</div>
-                
+                <div>Interior</div>  
             </div>
             <div class="architecture-c">
                 <div>Modern Library</div>
                 <div>In Chicago</div>
                 <div>Architecture</div>
-                
             </div>
             <div class="interior-c">
                 <div>Modern Kitchen</div>
                 <div>In Bucharest</div>
-                <div>Interior</div>
-                
+                <div>Interior</div>       
             </div>
        </main>
        
@@ -83,29 +78,59 @@
                     <div>Get</div>
                     <div>In touch</div>
                 </div>
-                <div>
-                    <label for="name"></label>
-                    <input required class="input-validation" type="text" name="Name" id="name" placeholder="Name">
+                <div class="column-rows-form">
+                    <div class="form-column">
+                        <div class="name">
+                            <label for="name"></label>
+                            <input required class="input-validation" type="text" name="Name" id="name" placeholder="Name">
+                        </div>
+                        <div class="email">
+                            <label for="email"></label>
+                            <input required class="input-validation" type="email" name="email" id="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-column">
+                        <div class="phone">
+                            <label for="phone-number"></label>
+                            <input required class="input-validation" type="number" name="Number" id="phone-number" placeholder="Phone">
+                        </div>
+                        <div class="company">
+                            <label for="Company"></label>
+                            <input required class="input-validation" type="text" name="company" id="Company" placeholder="Company">
+                        </div>
+                   </div>
+                   <div class="form-column">
+                        <div class="message">
+                            <label for="Textarea"></label>
+                            <textarea id="Textarea" rows="6" cols="30">Message</textarea>
+                        </div>
+                   </div>
                 </div>
-                <div>
-                    <label for="phone-number"></label>
-                    <input required class="input-validation" type="number" name="Number" id="phone-number" placeholder="Phone">
-                </div>
-                <div>
-                    <label for="email"></label>
-                    <input required class="input-validation" type="email" name="email" id="email" placeholder="Email">
-                </div>
-                <div>
-                    <label for="Company"></label>
-                    <input required class="input-validation" type="text" name="company" id="Company" placeholder="Company">
-                </div>
-                <div>
-                    <label for="Textarea"></label>
-                    <textarea id="Textarea" rows="4" cols="20">Message</textarea>
-                </div>
-                <button type="submit">Send<i class="fas fa-long-arrow-alt-right"></i></button>
+                <button class="send" type="submit">Send<i class="fas fa-long-arrow-alt-right"></i></button>
             </form>
-    </footer>
+        </footer>
+
+        <div class="go-arch-wrapper hidden" id="menu-mobile">
+            <div class="go-arch-x-section">
+                <div>go.arch</div>
+                <div><i class="fas fa-times" id="close-menu"></i></div>
+            </div>
+            <nav class="clickable-menu">
+                <a href="#">Home</a>
+                <a href="#">About us</a>
+                <a href="#">Projects</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact us</a>
+            </nav>
+            <div class="media-icons">
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-facebook-f"></i>  
+            <div>
+        </div>
+        <script src="resources/main.js"></script>
+        <noscript>
+            Your browser currently does not support or has JS disabled.
+        </noscript>
    </div>
 </body>
 </html>
