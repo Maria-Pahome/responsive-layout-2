@@ -92,6 +92,7 @@ header, .menu-section ul, .menu-container, .mobile-header {
 }
 
 /*main-section*/
+/* puteai sa ai o clasa comuna pentru setul acesta de reguli, sa fi nevoita sa listezi. este doar o sugestie, este ok si cum ai facut tu */
 header, .architecture-a, .interior-a, .architecture-b, 
 .interior-b, .architecture-c, .interior-c {
     background-size: cover;
@@ -256,6 +257,7 @@ textarea {
 }
 
 /*mobile-section*/
+/* in zona mobile intri sub 600px, la 900 de px inca ai mult loc, e ok sa si profiti de el */
 @media (max-width: 900px) {
     .menu-container {
         display: none;
@@ -324,6 +326,7 @@ textarea {
     .architecture-a div:nth-of-type(1), .interior-a div:nth-of-type(1),
     .architecture-b div:nth-of-type(1), .interior-b div:nth-of-type(1), 
     .architecture-c div:nth-of-type(1), .interior-c div:nth-of-type(1) {
+        /* intregul continut trebuie centrat, nu doar coborat cu padding-top. ti-am atasat un sceenshot, la mine nu se vede centrat */
         padding: 50px 0 0 0;
     }
     
