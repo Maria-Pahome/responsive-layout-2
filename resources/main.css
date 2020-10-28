@@ -235,15 +235,21 @@ form {
     background-color: #3d3d3d;
     border: none;
     padding-left: 10px;
+    border: solid #3d3d3d 2px;
+}
+
+::placeholder {
+    color: white;
 }
 
 .message textarea {
     background-color: #3d3d3d;
     border: none;
+    border: solid #3d3d3d 4px;
 }
 
 textarea {
-    color: grey; 
+    color: white; 
     font-family: 'Open Sans', sans-serif;
     padding: 6px 0 0 10px;
 }
@@ -258,7 +264,7 @@ textarea {
 
 /*mobile-section*/
 /* in zona mobile intri sub 600px, la 900 de px inca ai mult loc, e ok sa si profiti de el */
-@media (max-width: 900px) {
+@media (max-width: 600px) {
     .menu-container {
         display: none;
     }
@@ -327,15 +333,16 @@ textarea {
     .architecture-b div:nth-of-type(1), .interior-b div:nth-of-type(1), 
     .architecture-c div:nth-of-type(1), .interior-c div:nth-of-type(1) {
         /* intregul continut trebuie centrat, nu doar coborat cu padding-top. ti-am atasat un sceenshot, la mine nu se vede centrat */
-        padding: 50px 0 0 0;
+        text-align: center;
     }
     
 
     .architecture-a div:nth-of-type(2), .interior-a div:nth-of-type(2),
     .architecture-b div:nth-of-type(2), .interior-b div:nth-of-type(2), 
     .architecture-c div:nth-of-type(2), .interior-c div:nth-of-type(2) {
-        padding: 50px 0 0 5px;
+        text-align: center;
         color: #CEA87E;
+        padding: 5px 0 0 5px;
     }
 
     .architecture-a div:nth-of-type(3), .interior-a div:nth-of-type(3),
@@ -343,10 +350,11 @@ textarea {
     .architecture-c div:nth-of-type(3), .interior-c div:nth-of-type(3) {
         transform: rotate(0);
         height: 20px;
-        width: auto;
+        width: 200px;
+        height: 80px;
         text-align: center;
-        padding: 0 10px 0 10px;
-        letter-spacing: 5px;
+        letter-spacing: 5px; 
+        margin: -35px;
     }
 
     .form-column {
@@ -363,6 +371,7 @@ textarea {
     .message textarea {
         width: 440px;
         height: 50px;
+        font-family: 'Open Sans', sans-serif;
     }
 
     .more-projects {
@@ -379,10 +388,10 @@ textarea {
     /*UX section*/
     .go-arch-wrapper {
         display: block;
-        position: absolute;
+        position: fixed;
         top: 0;
         width: 100%;
-        height: 250px;
+        height: 100%;
         background-color:  #3d3d3d;
         font-weight: bolder;
     }
@@ -397,27 +406,40 @@ textarea {
     }
 
     .go-arch-x-section {
-        font-size: 30px;
-        padding: 0 10px 0 10px;
+        height: 100px;
+        padding: 10px 10px 0 20px;
         letter-spacing: 2px;
     }
+    
+    .go-arch-x-section div:nth-child(1) {
+        font-size: 35px;
+    }
 
-    .go-arch-x-section i {
-        font-size: 30px;
+    .img-exit-wp {
+        width: 40px;
+        height: auto;
+        background-color: #3d3d3d;
         color: lightgoldenrodyellow;
+    }
+
+    .img-exit {
+        width: 100%;
+        height: auto;
         cursor: pointer;
     }
 
     .clickable-menu {
         list-style: none;
+        padding-top: 40px;
     }
 
     .clickable-menu a {
         text-decoration: none;
-        color: grey;
+        color: lightgrey;
         font-family: 'Open Sans Condensed', sans-serif;
-        padding: 10px 0 0 10px;
+        padding: 10px 0 0 20px;
         letter-spacing: 5px;
+        font-size: 50px;
     }
 
     .clickable-menu a:hover{
@@ -427,16 +449,19 @@ textarea {
     .media-icons {
         width: 100%;
         box-sizing: border-box;
+        position: absolute;
+        top: 88%;
     }
     
     .media-icons i:nth-of-type(2), .media-icons i:nth-of-type(1) {
-        font-size: 40px;
+        font-size: 75px;
         color: grey;
         border: solid grey 1px;
-        border-bottom: none;
         text-align: center;
         padding-top: 5px;
+        border-bottom: none;
     }
+
     .media-icons i:nth-of-type(1) {
         flex: 1;
         border-left: none;
